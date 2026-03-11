@@ -89,9 +89,6 @@ botao.onclick = () => {
         } else {
             resultado.textContent = "Nenhum jogo encontrado para esses filtros";
         }
-
-    jogadores.value = "";
-    tempoJogo.value = "";
 }
 
 let jogadores = document.getElementById('qtdJogadores');
