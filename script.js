@@ -85,12 +85,26 @@ let botao = document.getElementById('btnSortear');
 botao.onclick = () => {
     let sugestao = sugerirJogo(jogos, Number(jogadores.value), Number(tempoJogo.value));
         if (sugestao) {
+            resultado.style.opacity ="0";
             resultado.textContent = sugestao.nome;
+            setTimeout(() => {resultado.style.opacity ="1";}, 200);
         } else {
-            resultado.textContent = "Nenhum jogo encontrado para esses filtros";
+            resultado.textContent = "Nenhum jogo encontrado.";
         }
 }
 
 let jogadores = document.getElementById('qtdJogadores');
 let tempoJogo = document.getElementById('qtdTempo');
 let resultado = document.getElementById('resultado');
+
+jogadores.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter'){
+        tempoJogo.focus();
+    }
+});
+
+tempoJogo.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter'){
+        botao.onclick();
+    }
+});

@@ -27,6 +27,8 @@ Durante o desenvolvimento pratiquei:
 - Manipulação do DOM para conectar JavaScript com HTML
 - Tratamento de casos de erro, como quando nenhum jogo é encontrado
 - Estilização com CSS, incluindo variáveis, flexbox e box-shadow
+- Eventos de teclado com `addEventListener('keydown')`
+- Feedback visual com `opacity` e `setTimeout`
 
 ## Sobre
 
