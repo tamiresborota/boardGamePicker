@@ -3,6 +3,7 @@
 Board Game Picker é uma aplicação web que sugere qual jogo de tabuleiro jogar com base no número de jogadores e no tempo disponível.
 
 [Acesse o projeto](https://tamiresborota.github.io/boardGamePicker/)
+![Board Game Picker](assets/preview.png)
 
 ## Como usar
 
